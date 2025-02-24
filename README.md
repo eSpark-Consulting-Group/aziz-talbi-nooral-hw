@@ -1,1 +1,55 @@
-# aziztalbi-nooral-hw
+# Noorall Product Design and Development
+#### Client Name: Aziz Talbi
+
+## Project Requirements
+The hardware should support below:
+- Core Components (These are locked and cannot be chagned unless really necessary)
+    - Processor: NXP i.MX 93
+    - WIFI BT Zigbee: IW612
+    - Power Management: PMIC PCA9451
+- Lighting System
+    - RGBCCT LED Light with PIR sensor
+    - Individual or group control via app
+- Audio System
+    - 2x30W speakers for multiroom audio
+    - Amplifier: TAS5825M (I2S interface) (Subject to change if better solution is available)
+    - Supported streaming services: AirPlay, Google Cast, and Spotify
+    - Full integration with mobile app for control
+    - Audio Streaming Module (if required)
+- Security Camera: (Remote camera module, fully integrated in the system
+    - AI-based detection for: (Edge AI)
+        - Facial recognition
+        - License plate recognition
+        - Fire detection
+        - Grass color monitoring (health assessment)
+- Voice Assistant & AI Agent
+    - Integrated microphone for Home Assistant & AI Agent
+    - AI processing through i.MX 93 (We can use 3rd party API services here as well)
+- Storage
+    - SD Card support
+- Communication & Smart Home Integration (Mostly firmware related)
+    - Wi-Fi and Zigbee/Thread protocols (IW612)
+    - Enables connectivity with
+        - Other Smart Light Hubs
+        - Smart home devices (temperature sensors, water leak detectors, window shades, etc)
+        - Support for Thread protocol for secure and reliable mesh networking between smart home devices
+- Ultra-Wideband (UWB)
+    - Protocol: Trimension SR150
+- RFID Integration: (6-Pin Connector for RAIN RFID modules using UART)
+    - Pin Configuration:
+        - VCC
+        - GND
+        - GPIO
+        - GPIO
+        - RXD
+        - TXD
+- System Status Notification
+     - RGB LED indicators for system states such as:
+         - Normal operation
+         - Fault detection
+         - No internet connection, etc.
+- Physical Requirement
+     - PCB dimension: 40x80mm or smaller
+     - Connections at 40mm end must be parallel
+     - Connections at 80mm end must perpendicular
+     - Double sided to make pcb compact
